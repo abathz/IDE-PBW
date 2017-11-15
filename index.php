@@ -1,55 +1,45 @@
+<?php 
+	include("phpScript/connection.php");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>IDE</title>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		
+		<title>IDE</title>		
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="lib/w3.css">
+			<link rel="stylesheet" href="lib/w3-theme-dark-grey.css">
+			<link rel="stylesheet" href="style/style.css">
+			<link rel="stylesheet" href="lib/font-awesome.min.css">
+			<link rel="stylesheet" href="lib/font-awesome.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+				
 	</head>
 	<body>
-		<div id="upperbut">
-			<button type="button" id="but" onclick= " "> About </button>
-			<button type="button" id="but" onclick= " "> Contact Us </button>
-			<button type="button" id="but" onclick= " "> Help </button>
+		<div class="bgIdx">
+			<div class="btnIdx">
+			 <a href="index.php" class="w3-bar-item w3-button"> About us </a>
+			 <a href="index.php" class="w3-bar-item w3-button"> Contact us </a>
+			 <a href="index.php" class="w3-bar-item w3-button"> Home </a>
 		</div>
-		<div id="content">
-			<div id="Big">IDE</div>
-			<br>
-			<div id ="med">Interacvtive Digital Learning Environment</div>
-			<br>
-			<br>
-			<div id ="small">Faculty of Information Technology and Science</div>
-			<br>
-			<button id="myBtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Login</button>
+<!--<div class="backgroudIndex"><img src="img/bgImg.jpg" alt="Background halaman "/></div>-->
+	<!--<div class="w3-bar">-->	
+		<?php
+			include("phpScript/login.php");
+		?>
+		<div class="tlsIdx">
+		<h1 id="ide"> IDE </h1><br>
+		<p> Interactive Digital Learning Environment </p>
+		<sup> -Faculty of Information Technology and Science- </sup><br><br>
+		<button type="button" class="btn-style btn-opac" data-toggle="modal" data-target="#login">Login</button>
 		</div>
-		<div id="about">&copy Developed by Adli Fariz Bonaputra, Muhammad Taufik Adianto</div>
-		
-		<div id="id01" class="modal">
-			<form class= "modal-content animate" action="/action_page.php">
-			<div class = "imgcontainer">
-				<label><b>Login</b></label>
-				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-			</div>
-			<div class= "container">
-				<label><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
 				
-				<label><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-				
-				<button type="submit">Login</button>
-				<span class="psw"><a href="#">Forgot Password?</a> or <a href="#">Forgot Username?</a> </span>
-				</div>
-			</form>
-		</div>
-		<script>
-		var modal = document.getElementById('id01');
-		window.onclick=function(event){
-			if(event.target == modal){
-				modal.style.display= "none";
-				
-			}
-			
-		}
-		</script>
-	</body>
+		<div class="bwhIdx">
+	<sub>&copy; Developed by Maria Veronica Claudia</sub>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
 </html>
