@@ -52,4 +52,8 @@
 		}
 		</script>
 	</body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 25dee87d977c822ab6738b29c3f68dfd559edd7a
