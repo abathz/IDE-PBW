@@ -1,97 +1,135 @@
-.navibar li {
-    margin-right: 0.5em;
-    margin-top: 1em;
-    background-color: #cccccc;
-    padding: 10px;
-    text-decoration: none;
-}
-.navibar li:hover{
-    background-color: #737373;
-    color: white;
-    text-decoration: none;
-}
-.navibar a:hover{
-    text-decoration: none;
-    color: white;
-}
-body{
-    background: url("../img/bgImg.jpg");
-}
-.developtext p{
-    color: white;
-    bottom: 0;
-    position: absolute;
-}
-.jarak{
-    padding-left: 1em;
-    margin-left: 1em;
-}
-.midtext{
-    display: table-row;
-    width: 100%;
-    height: 100vh;
-}
-.midtext h1,h4,h6{
-    color: white;
-}
-.ideenvironment{
-    display: table-cell;
-    vertical-align: middle;
-}
-.log{
-    background-color: #cccccc;
-    padding: 8px;
-    width: 70px;
-    outline: none;
-    border: none;
-}
-.log:hover{
-    background-color: #737373;
-    color: white;
-    outline: none;
-    border: none;
-}
-.inputuser[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 1px solid black;
-    
-}
-.inputpass[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 1px solid black;
-}
-.btnlog{
-    color: white;
-    background-color: black;
-    padding: 8px;
-    width: 100px;
-    outline: none;
-    border: none;
-}
-.btnlog:hover{
-    color: black;
-    background-color: grey;
-    padding: 8px;
-    width: 100px;
-    outline: none;
-    border: none;
-}
-.btnlog:hover a{
-    color: black;
-    background-color: grey;
-    padding: 8px;
-    width: 100px;
-    outline: none;
-    border: none;
-    text-decoration: none;
+@font-face {
+  font-family: "Candara";
+  src: url("../fonts/Candara.ttf");
 }
 
+@font-face {
+  font-family: "Adobe";
+  src: url("../fonts/AdobeFanHeitiStd-Bold.otf");
+}
 
+.background {
+  background-image: url("../img/bgImg.jpg");
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.nav-item {
+  background: rgba(255, 255, 255, .7);
+  margin-left: 8px;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.banner {
+  font-family: "Candara"; 
+  color: #fff;
+  margin-top: 220px;
+  margin-left: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, .7);
+  border: 0;
+  margin-left: 30px;
+}
+
+.navigation-bar {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  font-family: "Adobe";
+}
+
+.navigation-bar p {
+  margin: 0;
+  margin-top: 10px;
+  font-family: "Candara";
+}
+
+.navigation-bar h3 {
+  margin-bottom: 25px;
+}
+
+.sidebar {
+  font-family: "Candara";
+  width: 250px;
+  height: 700px;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.border-img {
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 100px;
+}
+
+table {
+  margin-top: 10px;
+}
+
+table tr > td:nth-child(1) {
+  padding: 0px 10px;
+}
+
+table tr td > a,
+table tr td > a:hover {
+  color: #000;
+}
+
+.heading-overview{
+  margin-top: 15px;
+  padding: 20px 20px 10px 20px;
+  color: #fff;
+  font-family: "Candara";
+  background-color: #555;
+}
+
+.card-course {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #666;
+  box-shadow: 3px 3px 10px 0px #888888;
+}
+
+.card-course p {
+  margin: 0;
+  font-family: "Candara";
+  font-size: 14pt;
+}
+
+.card-course p > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card-header a {
+  font-family: "Candara";
+  color: #333;
+}
+
+.card-header a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.card-topics{
+  margin-top: 15px;
+}
+
+#radioAssignment,
+#radioFile {
+  margin-right: 8px;
+}
+
+.scrollable-content{
+  overflow-y: scroll;
+  height: 650px;
+  margin-bottom: 20px;
+}

@@ -1,16 +1,6 @@
-<!-- include connection -->
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>IDE</title>
-		<!-- include style -->
-	</head>
-	
-	<body>
-		<?php $myCourses = false ?>
-		<!-- include header -->
-		<div class="w3-main">
-			<!-- include sidebar -->
-		</div>
-	</body>
-</html>
+
+<?php include('../../phpScript/connection.php');?>
+<?php include('../../layout/header.php');?>
+<?php include('../../layout/sidebar.php');?>
+<?php include('../../phpScript/courses.php');?>
+<?php include('../../layout/footer.php');?>
